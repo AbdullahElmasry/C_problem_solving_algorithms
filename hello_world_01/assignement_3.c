@@ -57,7 +57,7 @@ void comparing_strings(){
     printf("Enter the second string: ");
     scanf("%s",str2);
 
-    for(int i=1;(str1[i] != '\0' || str2[i] != '\0' );i++){ // we started iteration from index one because the format that scanf use to store the string has a space at index zero so the compiler considering it as a NULL
+    for(int i=0;(str1[i] != '\0' || str2[i] != '\0' );i++){ 
         if(str1[i] != str2[i]){
             flag = 0;
             break;
